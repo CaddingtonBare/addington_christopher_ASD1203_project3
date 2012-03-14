@@ -222,8 +222,7 @@ $(function(){
     $('#addJSON').on("click", function(){
         $('#jsontent').empty();
         $.ajax({
-            url: "xhr/data.js",
-            type: "GET",
+            url: "_view/sport",
             dataType: "json",
             success: function(answer){
                 alert("JSON data retrieved successfully!");
