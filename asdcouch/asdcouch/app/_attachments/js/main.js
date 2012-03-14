@@ -218,7 +218,7 @@ $(function(){
         }
     }
     
-    //Create eventhandler for clicking "Retrieve JSON" & populate page with the pulled data
+    //Create eventhandler for clicking "CouchDB AJAX call jQM listview" & populate page with the pulled data
     $('#addJSON').on("click", function(){
         $('#jsontent').empty();
         $.ajax({
