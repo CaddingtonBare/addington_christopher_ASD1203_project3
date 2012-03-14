@@ -217,7 +217,7 @@ $(function(){
             dataType: "json",
             success: function(answer){
             	$.each(answer.rows, function(index, sport){
-            		console.log(sport);
+            		console.log(sport.value.teamname);
             	});
             }
         });                    
