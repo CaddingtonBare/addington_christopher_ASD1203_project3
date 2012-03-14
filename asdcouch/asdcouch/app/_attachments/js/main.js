@@ -217,8 +217,21 @@ $(function(){
             dataType: "json",
             success: function(answer){
             	$.each(answer.rows, function(index, sport){
-            		console.log(sport.value.teamname);
+            		var whichSport = sport.value.sport;
+            		var teamName = sport.value.teamname;
+            		var nextDate = sport.value.nextdate;
+            		$('#jsontent').append(
+            				$('<li>').append(
+            						$('<a>').attr("href", "#")
+            							.text(teamName)
+            								.append(
+            										$('<img src="images/' + whichSport + '_10px.png" />')
+            								)
+            								
+            				)
+            		);
             	});
+            	$('#jsontent').listview('refresh');
             }
         });                    
     });
