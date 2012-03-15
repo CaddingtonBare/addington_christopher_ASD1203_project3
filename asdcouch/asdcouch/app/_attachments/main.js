@@ -66,7 +66,7 @@ $(function(){
             var value = localStorage.getItem(key);
             var obj = JSON.parse(value);
             $('#itemsUl')
-                .append('<li><h3><img src="images/' + obj.sports[1] + '_10px.png" />' + obj.sports[1] + '</h3></li')
+                .append('<li><h3><img src="' + obj.sports[1] + '_10px.png" />' + obj.sports[1] + '</h3></li')
             ;
             $('#itemsUl li:last')
                 .append('<ul>' + obj.sports[1] + '</ul>')
@@ -87,7 +87,7 @@ $(function(){
     //Function to get a unique image for each sport.
     function getImage(catName){
         $('#itemsUl li:last ul:last')
-            .append('<li><img src="images/"' + catName + '".png"')
+            .append('<li><img src="' + catName + '".png"')
         ;        
     }
     
@@ -225,7 +225,7 @@ $(function(){
             						$('<a>').attr("href", "#")
             							.text(teamName)
             								.append(
-            										$('<img src="images/' + whichSport + '_10px.png" />')
+            										$('<img src="' + whichSport + '_10px.png" />')
             								)
             								
             				)
@@ -254,7 +254,7 @@ $(function(){
                 var notes = $(this).find('notes').text();
                 $('' +
                     '<div id="team">'+
-                        '<h3><img src="images/' + sport + '_10px.png" />' + sport + '</h3>'+
+                        '<h3><img src="' + sport + '_10px.png" />' + sport + '</h3>'+
                         '<div>'+
                             '<ul>'+
                                 '<li>Sport: ' + sport + '</li>'+
@@ -299,7 +299,7 @@ $(function(){
                     var teamCat = teams[k];
                     $('' +
                         '<div id="team">'+
-                            '<h3><img src="images/' + teamCat[0] + '_10px.png" />' + teamCat[0] + '</h3>'+
+                            '<h3><img src="' + teamCat[0] + '_10px.png" />' + teamCat[0] + '</h3>'+
                             '<div>'+
                                 '<ul>'+
                                     '<li>Sport: ' + teamCat[0] + '</li>'+
