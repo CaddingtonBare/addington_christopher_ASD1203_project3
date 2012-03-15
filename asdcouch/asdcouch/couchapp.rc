@@ -1,12 +1,10 @@
 {
-  "env": {
-    "local": {
-      "db": "http://127.0.0.1:5984/pleague-app"
-    }
-  },
-  "cloudant": {
-  "local": {
-    "db": "http://127.0.0.1:5984/pleague-app"
-  }
- }
+	"env": {
+    	"local": {
+      	"db": "http://127.0.0.1:5984/pleague-app"
+  		},
+  		"cloudant": {
+    	"db": "https://airseetindsdarthenteredd:NuYCtaEHNcwG4nlQuuDu4on3@caddington.cloudant.com/asdproject"
+  		}
+	}
 }
